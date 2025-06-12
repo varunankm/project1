@@ -17,9 +17,9 @@ AI-Chatbot-College-Helpdesk/ │ ├── chatbot.py                  # Main Py
 
 ---
 
-## ⚙ Installation & Setup
+## ⚙️ Installation & Setup
 
-1. *Clone the repository*:
+1. **Clone the repository**:
    ```bash
    git clone https://github.com/your-username/AI-Chatbot-College-Helpdesk.git
    cd AI-Chatbot-College-Helpdesk
@@ -81,15 +81,3 @@ Deploy as a web-based chatbot using Flask
 
 
 ---
-
-
-
-⭐ Star this repo if you like it!
-
----
-
-Let me know when you're ready and I will also give you:
-
-- ✅ The *full chatbot Python code*
-- ✅ requirements.txt content
-- ✅ Steps to upload your project to GitHub (via GitHub Desktop or Git commands)
