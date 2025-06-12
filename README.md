@@ -79,7 +79,7 @@ Use ML/NLP models for smarter responses
 Deploy as a web-based chatbot using Flask
 ---
 Author:
-Develop by 
+Developed by 
     Varunan K M
 
 
