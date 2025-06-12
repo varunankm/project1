@@ -1,0 +1,50 @@
+import java.util.*;
+
+public class Chatbot {
+    static Map<String, String> faqData = new HashMap<>();
+
+    // Load FAQ data
+    public static void loadFaqData() {
+        faqData.put("what is the exam date", "Semester exams start from July 5th.");
+        faqData.put("who is the hod of cse department", "Dr. Ramesh is the HOD of CSE.");
+        faqData.put("how to apply for scholarship", "Apply via the college portal under 'Student Services'.");
+        faqData.put("how to get id card", "Visit the admin office with your student ID.");
+    }
+
+    // Main chatbot logic
+    public static void startChat() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println(" AI Chatbot for College Helpdesk");
+        System.out.println("Type 'exit' to quit\n");
+
+        while (true) {
+            System.out.print("You: ");
+            String userInput = scanner.nextLine().toLowerCase();
+
+            if (userInput.equals("exit")) {
+                System.out.println("Bot: Goodbye! ");
+                break;
+            }
+
+            boolean found = false;
+            for (String question : faqData.keySet()) {
+                if (userInput.contains(question)) {
+                    System.out.println("Bot: " + faqData.get(question));
+                    found = true;
+                    break;
+                }
+            }
+
+            if (!found) {
+                System.out.println("Bot: Sorry, I don't have an answer for that yet.");
+            }
+        }
+
+        scanner.close();
+    }
+
+    public static void main(String[] args) {
+        loadFaqData();
+        startChat();
+    }
+}
