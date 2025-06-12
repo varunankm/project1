@@ -77,7 +77,10 @@ Add speech input/output
 Use ML/NLP models for smarter responses
 
 Deploy as a web-based chatbot using Flask
-
+---
+Author:
+Develop by 
+    Varunan K M
 
 
 ---
